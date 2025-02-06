@@ -658,7 +658,7 @@ margin: 0.5rem;
     align-items: center;
     flex-direction: column;
     height: 220px;
-    width: 220px;
+    width: 100%;
     background-color: #ffffff;
   }
   .bi {
@@ -675,5 +675,8 @@ margin: 0.5rem;
   }
   .exs {
     font-weight: bold;
+  }
+  .lado{
+    display: flex;
   }
 }
