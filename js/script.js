@@ -20,3 +20,47 @@ dropdowns.forEach(dropdown => {
     }
   });
 });
+const modal = document.getElementById("modal");
+const modalImg = document.getElementById("modalImg");
+const closeBtn = document.querySelector(".close");
+const prevBtn = document.querySelector(".prev");
+const nextBtn = document.querySelector(".next");
+const images = document.querySelectorAll(".fotos img");
+
+let currentIndex = 0; // Índice da imagem atual
+
+// Função para abrir o modal
+function openModal(index) {
+  modal.style.display = "block";
+  modalImg.src = images[index].src;
+  currentIndex = index;
+}
+
+// Fechar modal
+closeBtn.onclick = () => {
+  modal.style.display = "none";
+};
+
+// Fechar ao clicar fora da imagem
+modal.onclick = (event) => {
+  if (event.target === modal) {
+    modal.style.display = "none";
+  }
+};
+
+// Navegar para a imagem anterior
+prevBtn.onclick = () => {
+  currentIndex = (currentIndex - 1 + images.length) % images.length;
+  modalImg.src = images[currentIndex].src;
+};
+
+// Navegar para a próxima imagem
+nextBtn.onclick = () => {
+  currentIndex = (currentIndex + 1) % images.length;
+  modalImg.src = images[currentIndex].src;
+};
+
+// Adiciona evento de clique para abrir o modal
+images.forEach((img, index) => {
+  img.addEventListener("click", () => openModal(index));
+});
