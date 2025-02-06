@@ -36,6 +36,13 @@ function openModal(index) {
   currentIndex = index;
 }
 
+function scrollToSection() {
+  document.getElementById('perguntas').scrollIntoView({ behavior: 'smooth' });
+}
+function scrollToFotos() {
+  document.getElementById('fotos').scrollIntoView({ behavior: 'smooth' });
+}
+
 // Fechar modal
 closeBtn.onclick = () => {
   modal.style.display = "none";
