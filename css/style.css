@@ -312,6 +312,68 @@ header {
 .fotos img:hover {
   transform: scale(1.05);
 }
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 80%;
+  max-height: 80%;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  object-fit: contain;
+}
+/* Botão de fechar */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  color: white;
+  font-size: 35px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Botões de navegação */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  user-select: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  z-index: 10000;
+}
+
+.prev {
+  left: 5%;
+}
+
+.next {
+  right: 5%;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
 /* Felipe */
 
 @media (max-width: 1000px) {
