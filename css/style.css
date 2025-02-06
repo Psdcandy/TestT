@@ -1,0 +1,616 @@
+@import url(reset.css);
+body {
+  display: flex;
+  flex-direction: column;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.dropbtn {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  padding: 16px;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  padding-bottom: 4px;
+  align-items: start;
+}
+
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 2px;
+  width: 100%;
+}
+
+.dropdown-content {
+  display: none;
+  position: relative;
+  background-color: #ffffff;
+  min-width: 160px;
+  z-index: 1;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  padding-left: 1rem;
+}
+
+.dropdown.show .dropdown-content {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
+
+.dropdown-content.hide {
+  animation: fadeOut 0.3s forwards;
+}
+.FAQ {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  margin: 10rem;
+}
+.faq {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 10px;
+  font-size: 3rem;
+  border-bottom: solid 1px;
+  margin-bottom: 20px;
+}
+.separador {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.rdp {
+  display: flex;
+  width: 100vw;
+  height: 650px;
+
+  position: relative;
+  align-items: end;
+}
+
+.roda {
+  width: 100%;
+  height: 650px;
+  background: url("Design-sem-nome8-1.webp");
+  background-size: cover;
+  position: relative;
+}
+.org {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  gap: 2rem;
+  opacity: 90%;
+}
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 220px;
+  width: 220px;
+  background-color: #ffffff;
+}
+.bi {
+  color: black;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 8px;
+}
+.txt {
+  color: black;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: center;
+}
+.exs {
+  font-weight: bold;
+}
+/* Minha parte */
+main {
+  margin: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 6rem;
+  flex-direction: column;
+}
+
+.imagem_1 {
+  width: 399px;
+  height: 532px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  border: 3px solid #000;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.texto_1 {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding: 0px 0px 90px 0px;
+}
+
+.texto_3 {
+  width: 300px;
+  font-family: "Cormorant Garamond", sans-serif;
+  font-size: 20px;
+}
+
+.texto_2 {
+  font-size: 30px;
+  font-weight: bold;
+  font-style: italic;
+  font-family: "Montague Script", cursive;
+  line-height: 1.5;
+}
+.juntos {
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+}
+/* renan */
+header {
+  width: 100%;
+  /* height: 758px; */
+}
+.jo {
+  background-color: rgb(142, 127, 112);
+  border: none;
+  color: rgb(255, 255, 255);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 22px;
+  margin: 1rem;
+}
+.imgg {
+  display: flex;
+  width: 100vw;
+  /* height: 70vh; */
+  position: relative;
+}
+.unha {
+  width: 100%;
+  background: url("bc.webp") no-repeat center center;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  flex-direction: column;
+}
+/* João */
+.local {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 1;
+  gap: 5px;
+}
+.endereco {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.carta {
+  width: 2rem;
+  height: 2rem;
+}
+.espaco_galeria {
+  display: flex;
+  background-color: rgb(240, 240, 240);
+
+  justify-content: center;
+  align-items: center;
+}
+.galeria {
+  display: flex;
+  width: 95%;
+
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 10px;
+}
+.galeria_text {
+  font-family: "Didot", serif;
+  font-size: 48px;
+  font-weight: normal;
+  color: #333;
+  text-align: center;
+  margin-top: 20px;
+}
+.linha {
+  width: 50%;
+  height: 1px;
+  background-color: #a7a7a7;
+  margin: 0 auto;
+}
+.titulo_galeria {
+  display: flex;
+  width: 60%;
+  height: 80%;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+}
+.fotos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.fotos img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+.fotos img:hover {
+  transform: scale(1.05);
+}
+/* Felipe */
+
+@media (max-width: 1000px) {
+  header {
+    width: 100%;
+    /* height: 758px; */
+  }
+  .jo {
+    background-color: rgb(142, 127, 112);
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 0.7rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 22px;
+    /* margin: 1rem; */
+  }
+  .imgg {
+    display: flex;
+    width: 100vw;
+    /* height: 70vh; */
+    position: relative;
+  }
+  .unha {
+    width: 100%;
+    background: url("bc.webp") no-repeat center center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-direction: column;
+  }
+  .Aum {
+    width: 100vw;
+  }
+  /* Pt Header */
+  main {
+    margin: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 2rem;
+    flex-direction: column;
+  }
+
+  .imagem_1 {
+    width: 50vw;
+    height: auto;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border: 3px solid #000;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .texto_1 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0px 0px 90px 0px;
+  }
+
+  .texto_3 {
+    width: 300px;
+    font-family: "Cormorant Garamond", sans-serif;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .texto_2 {
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: "Montague Script", cursive;
+    line-height: 1.5;
+    text-align: center;
+  }
+  .juntos {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    flex-direction: column;
+  }
+  /* Ap Main */
+  .espaco_galeria {
+    display: flex;
+    background-color: rgb(240, 240, 240);
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+  }
+  .galeria {
+    display: flex;
+    width: 95%;
+
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 10px;
+  }
+  .galeria_text {
+    font-family: "Didot", serif;
+    font-size: 48px;
+    font-weight: normal;
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .linha {
+    width: 50%;
+    height: 1px;
+    background-color: #a7a7a7;
+    margin: 0 auto;
+  }
+  .titulo_galeria {
+    display: flex;
+    width: 60%;
+    height: 80%;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+  }
+  .fotos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    padding: 5px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .fotos img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+    transition: transform 0.3s;
+  }
+  .fotos img:hover {
+    transform: scale(1.05);
+  }
+  /* Galeria Main */
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+  .dropbtn {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 16px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    padding-bottom: 4px;
+    text-align: start;
+    
+  }
+  
+  .dropdown {
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 2px;
+    width: 100%;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: relative;
+    background-color: #ffffff;
+    min-width: 160px;
+    z-index: 1;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+    padding-left: 1rem;
+  }
+  
+  .dropdown.show .dropdown-content {
+    border-bottom: solid black 2px;
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    to {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+  }
+  
+  .dropdown-content.hide {
+    animation: fadeOut 0.3s forwards;
+  }
+  .FAQ {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    margin: 2rem;
+  }
+  .faq {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 10px;
+    font-size: 3rem;
+    border-bottom: solid 1px;
+    margin-bottom: 20px;
+  }
+  .separador {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .rdp {
+    display: flex;
+    width: 100vw;
+    height: auto;
+  
+    position: relative;
+    align-items: end;
+  }
+  
+  .roda {
+    width: 100%;
+    height: auto;
+    background: url("Design-sem-nome8-1.webp");
+    background-size: cover;
+    position: relative;
+  }
+  .org {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+margin: 0.5rem;
+    opacity: 90%;
+    flex-direction: column;
+  }
+  .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 220px;
+    width: 220px;
+    background-color: #ffffff;
+  }
+  .bi {
+    color: black;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 8px;
+  }
+  .txt {
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+  }
+  .exs {
+    font-weight: bold;
+  }
+}
