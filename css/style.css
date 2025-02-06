@@ -183,7 +183,6 @@ main {
 
 .texto_3 {
   width: 300px;
-  font-family: "Cormorant Garamond", sans-serif;
   font-size: 20px;
 }
 
@@ -191,7 +190,6 @@ main {
   font-size: 30px;
   font-weight: bold;
   font-style: italic;
-  font-family: "Montague Script", cursive;
   line-height: 1.5;
 }
 .juntos {
