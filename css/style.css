@@ -219,12 +219,7 @@ header {
 .imgg {
   display: flex;
   width: 100vw;
-    height: 800px;
   position: relative;
-  background-image: url(lg3.webp);
-  background-size: 40%;
-  background-position: center;
-    background-repeat: no-repeat;
 }
 
 .unha {
@@ -401,8 +396,7 @@ header {
   .imgg {
     display: flex;
     width: 100vw;
-        height: 400px;
-  background-size: cover;
+    /* height: 70vh; */
     position: relative;
   }
   .unha {
