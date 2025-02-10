@@ -42,6 +42,9 @@ function scrollToSection() {
 function scrollToFotos() {
   document.getElementById('fotos').scrollIntoView({ behavior: 'smooth' });
 }
+function scrollToContatos() {
+  document.getElementById('Contatos').scrollIntoView({ behavior: 'smooth' });
+}
 
 // Fechar modal
 closeBtn.onclick = () => {
