@@ -30,6 +30,7 @@ footer {
   display: inline-block;
   margin-bottom: 2px;
   width: 100%;
+  font-weight: bold;
 }
 
 .dropdown-content {
