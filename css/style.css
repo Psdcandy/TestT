@@ -219,9 +219,13 @@ header {
 .imgg {
   display: flex;
   width: 100vw;
-  /* height: 70vh; */
+min-height: 600px;
   position: relative;
+  background-image: url(logo-em-png.webp);
+  background-size: cover;
+  background-position: center;
 }
+
 .unha {
   width: 100%;
 
