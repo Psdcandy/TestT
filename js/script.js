@@ -47,30 +47,30 @@ function scrollToContatos() {
 }
 
 // Fechar modal
-closeBtn.onclick = () => {
-  modal.style.display = "none";
-};
+// closeBtn.onclick = () => {
+//   modal.style.display = "none";
+// };
 
-// Fechar ao clicar fora da imagem
-modal.onclick = (event) => {
-  if (event.target === modal) {
-    modal.style.display = "none";
-  }
-};
+// // Fechar ao clicar fora da imagem
+// modal.onclick = (event) => {
+//   if (event.target === modal) {
+//     modal.style.display = "none";
+//   }
+// };
 
-// Navegar para a imagem anterior
-prevBtn.onclick = () => {
-  currentIndex = (currentIndex - 1 + images.length) % images.length;
-  modalImg.src = images[currentIndex].src;
-};
+// // Navegar para a imagem anterior
+// prevBtn.onclick = () => {
+//   currentIndex = (currentIndex - 1 + images.length) % images.length;
+//   modalImg.src = images[currentIndex].src;
+// };
 
-// Navegar para a próxima imagem
-nextBtn.onclick = () => {
-  currentIndex = (currentIndex + 1) % images.length;
-  modalImg.src = images[currentIndex].src;
-};
+// // Navegar para a próxima imagem
+// nextBtn.onclick = () => {
+//   currentIndex = (currentIndex + 1) % images.length;
+//   modalImg.src = images[currentIndex].src;
+// };
 
-// Adiciona evento de clique para abrir o modal
-images.forEach((img, index) => {
-  img.addEventListener("click", () => openModal(index));
-});
+// // Adiciona evento de clique para abrir o modal
+// images.forEach((img, index) => {
+//   img.addEventListener("click", () => openModal(index));
+// });
