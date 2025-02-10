@@ -219,7 +219,7 @@ header {
 .imgg {
   display: flex;
   width: 100vw;
-min-height: 800px;
+    height: 800px;
   position: relative;
   background-image: url(lg3.webp);
   background-size: 40%;
@@ -401,7 +401,7 @@ min-height: 800px;
   .imgg {
     display: flex;
     width: 100vw;
-    min-height: 400px;
+        height: 400px;
   background-size: cover;
     position: relative;
   }
