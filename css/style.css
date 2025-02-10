@@ -20,6 +20,7 @@ footer {
   cursor: pointer;
   padding-bottom: 4px;
   align-items: start;
+  font-weight: bold;
 }
 
 .dropdown {
@@ -30,7 +31,6 @@ footer {
   display: inline-block;
   margin-bottom: 2px;
   width: 100%;
-  font-weight: bold;
 }
 
 .dropdown-content {
