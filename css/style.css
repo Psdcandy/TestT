@@ -678,7 +678,7 @@ margin: 0.5rem;
     display: flex;
   }
 }
-.espaco_serviços {
+/* .espaco_serviços {
   display: flex;
   background-color: rgb(240, 240, 240);
   width: 100vw;
@@ -736,3 +736,4 @@ margin: 0.5rem;
 .services img:hover {
   transform: scale(1.05);
 }
+ */
