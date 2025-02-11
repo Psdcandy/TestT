@@ -37,9 +37,9 @@ function openModal(index) {
 }
 
 // Fechar modal
-closeBtn.onclick = () => {
-  modal.style.display = "none";
-};
+// closeBtn.onclick = () => {
+//   modal.style.display = "none";
+// };
 
 // Fechar ao clicar fora da imagem
 modal.onclick = (event) => {
