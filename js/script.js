@@ -36,10 +36,10 @@ function openModal(index) {
   currentIndex = index;
 }
 
-// Fechar modal
-// closeBtn.onclick = () => {
-//   modal.style.display = "none";
-// };
+//Fechar modal
+closeBtn.onclick = () => {
+  modal.style.display = "none";
+};
 
 // Fechar ao clicar fora da imagem
 modal.onclick = (event) => {
