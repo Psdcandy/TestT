@@ -46,6 +46,7 @@ footer {
 }
 
 .dropdown.show .dropdown-content {
+   border-bottom: solid black 2px;
   display: block;
   opacity: 1;
   transform: translateY(0);
