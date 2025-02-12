@@ -11,7 +11,7 @@ dropdowns.forEach(dropdown => {
         dropdown.classList.remove('show');
         dropdownContent.classList.remove('hide');
         dropdownContent.style.display = 'none';
-      }, 500);
+      }, 250);
     } else {
       dropdownContent.style.display = 'block';
       setTimeout(() => {
